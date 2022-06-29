@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Projeto Not + Hungry</string>
+    <string name="nome_produto">Produto</string>
+    <string name="valor_produto">Valor do produto :</string>
+    <string name="descrição_produto">Descrição</string>
+    <string name="categoria_produto">Categoria</string>
+    <string name="quantidade_produto">Quantidade disponivel :</string>
+    <string name="inserir_imagem">Inserir imagem</string>
+    <string name="valor">0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Login_Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="todo">TODO</string>
+    <string name="esqueceu_a_senha">Esqueceu a senha ?</string>
+    <string name="saldo_disponivel">Saldo Disponivel :</string>
+    <string name="pts">pontos</string>
+    <string name="todo_perfil">Sua foto:</string>
+    <string name="xxxx">0</string>
+    <string name="_06454_040">_06454_040</string>
+    <string name="cidade">Cidade</string>
+    <string name="info_scroll">Scroll de Informações</string>
+    <string name="bem_vindo_henrique">Bem-vindo HENRIQUE</string>
+</resources>

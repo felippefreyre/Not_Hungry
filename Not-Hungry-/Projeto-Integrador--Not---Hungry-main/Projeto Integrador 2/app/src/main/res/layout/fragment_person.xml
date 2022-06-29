@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/saldo_disponivel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="200dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:gravity="center"
+                    android:text="@string/saldo_disponivel"
+                    android:textAlignment="center"
+                    android:textColor="#FF454749"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imagem_perfil" />
+
+                <TextView
+                    android:id="@+id/saldo_disponivel2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="110dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:gravity="center"
+                    android:text="5 Pontos"
+                    android:textAlignment="center"
+                    android:textColor="#2E7D32"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imagem_perfil" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imagem_perfil"
+                    android:layout_width="228dp"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/todo_perfil"
+                    android:src="@drawable/henrique"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName9"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:autofillHints=""
+                    android:background="@drawable/ic_background_pequeno_registro"
+                    android:ems="10"
+                    android:hint="_06454_040"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:text="Cidade"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName8"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:autofillHints=""
+                    android:background="@drawable/ic_background_pequeno_registro"
+                    android:ems="10"
+                    android:hint="Alphaville"
+                    android:inputType="textPersonName"
+                    android:paddingStart="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:autofillHints=""
+                    android:background="@drawable/ic_background_pequeno_registro"
+                    android:ems="10"
+                    android:hint="Barueri"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:text="Senha"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editEmailCadastro"
+                    app:layout_constraintVertical_bias="0.52" />
+
+                <EditText
+                    android:id="@+id/editTextTextPassword2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:autofillHints=""
+                    android:background="@drawable/ic_background_input"
+                    android:ems="10"
+                    android:hint="lizaamelhor123"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:paddingStart="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editEmailCadastro"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:text="Email"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editEmailCadastro"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+                <EditText
+                    android:id="@+id/editEmailCadastro"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:autofillHints=""
+                    android:background="@drawable/ic_background_pequeno_registro"
+                    android:ems="10"
+                    android:hint="henriquepf_melhor_generation_org"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:text="Nome"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/saldo_disponivel" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="50dp"
+                    android:autofillHints=""
+                    android:background="@drawable/ic_background_pequeno_registro"
+                    android:ems="10"
+                    android:hint="henrique_felipe"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingStart="12dp"
+                    android:textIsSelectable="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/saldo_disponivel"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="152dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:text="Bairro"
+                    android:textAlignment="viewStart"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:text="CEP"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName11"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="120dp"
+                    android:autofillHints=""
+                    android:background="@drawable/ic_background_pequeno_registro"
+                    android:ems="10"
+                    android:hint="Rio Negro"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9"
+                    tools:ignore="TextContrastCheck" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName12"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:autofillHints=""
+                    android:background="@drawable/ic_background_registro_pequeno"
+                    android:ems="10"
+                    android:hint="1500"
+                    android:inputType="textPersonName"
+                    android:paddingStart="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName11"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:text="Endereço
+"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName11"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="77dp"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:text="N*"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+
+                <Button
+                    android:id="@+id/buttonAtualizar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/fundo_caixa"
+                    android:backgroundTint="#F5B44A"
+                    android:fontFamily="@font/baloo_thambi"
+                    android:text="Atualizar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11"
+                    app:strokeColor="#D99E3F"
+                    app:strokeWidth="2dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
